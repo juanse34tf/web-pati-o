@@ -1,0 +1,11 @@
+{
+  "name": "Profesor Carlos G. Patiño",
+  "short_name": "Prof. Patiño",
+  "start_url": "/web-pati-o/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
