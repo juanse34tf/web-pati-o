@@ -14,20 +14,20 @@ Una landing page profesional y moderna para el Profesor Carlos G. Patiño, espec
 1. **Hero Section**: Presentación impactante del profesor
 2. **Beneficios**: Por qué elegir las asesorías del profesor
 3. **Materias**: Lista organizada de todas las materias que enseña
-4. **Testimonios**: 5 testimonios reales de estudiantes
+4. **Experiencia**: Más de 30 años acompañando estudiantes de PUJ, San Buenaventura, Icesi, UAO y Univalle
 5. **Precios**: 3 paquetes de precios flexibles
 6. **Contacto**: Formulario completo e información de contacto
 
 ### 🎓 Materias Cubiertas
 - Matemáticas
-- Física (Termodinámica, Electromagnetismo)
-- Química (General, Orgánica, Fisicoquímica)
+- Física
+- Termodinámica
+- Electromagnetismo
 - Cálculo (Diferencial, Integral, Vectorial)
 - Estadística
 - Álgebra Lineal
 - Matemáticas Financieras
 - Investigación de Operaciones
-- Procesos Estocásticos
 
 ### 🛠 Tecnologías Utilizadas
 - **HTML5**: Estructura semántica y accesible
@@ -70,23 +70,34 @@ Una landing page profesional y moderna para el Profesor Carlos G. Patiño, espec
 - **Teléfono/WhatsApp**: 310 442 61 89
 - **Email**: profecarlos757@gmail.com
 - **Horario**: Lunes a Domingo: 8:00 AM - 8:00 PM
-- **Cobertura**: Bogotá y área metropolitana
+- **Cobertura**: Cali y municipios aledaños (Jamundí, Yumbo, Palmira, Candelaria). Online para todo el mundo hispano.
 
 ## 🚀 Cómo usar
 
-### Instalación
+### Instalación y despliegue
+Esta landing se publica automáticamente en GitHub Pages desde la rama `main` y está disponible en el dominio personalizado:
+
+- Sitio: https://profecarpa.works/
+
+Para ejecutarla localmente:
 1. Descargar todos los archivos
 2. Abrir `index.html` en un navegador web
-3. ¡Listo! La página funciona sin servidor web
+3. ¡Listo! No requiere servidor
 
 ### Estructura de Archivos
 ```
 landing-page/
 │
-├── index.html          # Página principal
-├── script.js           # JavaScript para interactividad
-├── styles.css          # CSS personalizado
-└── README.md          # Esta documentación
+├── index.html        # Página principal (HTML + SEO + JSON-LD)
+├── styles.css        # CSS personalizado
+├── script.js         # JavaScript para interactividad y validación
+├── CNAME             # Dominio personalizado (profecarpa.works)
+├── robots.txt        # Instrucciones para bots (incluye Sitemap)
+├── sitemap.xml       # Mapa del sitio
+├── site.webmanifest  # PWA básico (icono, tema)
+├── 404.html          # Página 404 para rutas inválidas
+├── .nojekyll         # Desactiva Jekyll en GitHub Pages
+└── README.md         # Esta documentación
 ```
 
 ### Personalización
@@ -95,7 +106,7 @@ Para personalizar la página:
 1. **Cambiar información del profesor**: Editar el archivo `index.html`
 2. **Modificar colores**: Ajustar las clases de Tailwind o el CSS personalizado
 3. **Agregar materias**: Añadir nuevas tarjetas en la sección "Materias"
-4. **Actualizar testimonios**: Modificar la sección de testimonios
+4. **Actualizar experiencia**: Ajustar universidades o años de experiencia
 5. **Cambiar precios**: Actualizar la sección de precios
 
 ### Integración WhatsApp
@@ -154,11 +165,13 @@ Espero tu respuesta. ¡Gracias!`;
 - Animaciones optimizadas con GPU
 - Scroll suave nativo del navegador
 
-### SEO
-- Meta tags optimizados
+### SEO y Dominio
+- Meta tags optimizados (title, description, canonical, Open Graph y Twitter)
 - Estructura HTML semántica
-- Alt text para imágenes
-- Schema markup preparado
+- JSON-LD: `Person` y `FAQPage` para resultados enriquecidos
+- `robots.txt` con referencia a `sitemap.xml`
+- Dominio personalizado con CNAME: `profecarpa.works`
+- HTTPS forzado una vez emitido el certificado en GitHub Pages
 
 ### Accesibilidad
 - Contraste de colores AAA
