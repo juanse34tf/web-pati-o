@@ -26,6 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link href="styles.css" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -41,50 +42,50 @@
         }
     </script>
 </head>
-<body class="bg-white">
-
+                    <div data-aos="fade-left">
+                        <form class="bg-white p-8 rounded-2xl shadow-lg pageclip-form" id="contactForm" method="post" action="https://send.pageclip.co/AePznggk1xeRv3ffLzFgRueiyFDwv42d">
     <!-- Hero Section -->
     <section class="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white overflow-hidden">
         <div class="absolute inset-0 bg-black/20"></div>
         <div class="relative z-10 container mx-auto px-4 py-20 flex flex-col justify-center min-h-screen">
-            <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
+                                <input type="text" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Tu nombre completo" required>
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
                     Profesor Carlos G. Patiño
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 text-blue-100 font-light">
-                    Asesorías Académicas y Clases Personalizadas a Domicilio y por Internet
+                                <input type="tel" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Tu número de teléfono" required>
                 </p>
                 <p class="text-lg md:text-xl mb-12 text-blue-200 max-w-2xl mx-auto leading-relaxed">
                     Transforma tu comprensión de las matemáticas, física, termodinámica y electromagnetismo con clases personalizadas 
                     diseñadas para tu éxito académico
-                </p>
+                                <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="tu@email.com" required>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a href="#contacto" class="bg-accent hover:bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl">
                         Solicitar Asesoría
                     </a>
-                    <a href="tel:3104426189" class="border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                                <select name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" required>
                         <i class="fas fa-phone mr-2"></i>310 442 61 89
                     </a>
                 </div>
-            </div>
         </div>
         
         <!-- Floating elements for visual appeal -->
         <div class="absolute top-20 left-10 w-20 h-20 bg-blue-400/30 rounded-full blur-xl animate-pulse"></div>
         <div class="absolute top-40 right-20 w-32 h-32 bg-indigo-400/20 rounded-full blur-2xl animate-pulse"></div>
-        <div class="absolute bottom-20 left-1/4 w-16 h-16 bg-accent/30 rounded-full blur-lg animate-pulse"></div>
+                                    <option value="termodinamica">Termodinámica</option>
+                                    <option value="electromagnetismo">Electromagnetismo</option>
     </section>
 
     <!-- About Section -->
     <section class="py-20 bg-gray-50" id="sobre-mi">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">¿Por qué elegir mis asesorías?</h2>
+                                <textarea name="message" class="w-full px-4 py-3 border border-gray-300 rounded-lg h-32 focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Cuéntame sobre tus necesidades académicas, nivel de estudio, horarios preferidos, etc." required></textarea>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Con años de experiencia en educación, ofrezco un enfoque personalizado que se adapta a tu estilo de aprendizaje. 
-                    Modalidades: clases a domicilio en Cali y municipios aledaños, asesorías por Internet y solución de talleres.
-                </p>
-            </div>
+                            <button type="submit" class="pageclip-form__submit w-full bg-primary hover:bg-blue-800 text-white py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105">
+                                <span><i class="fas fa-paper-plane mr-2"></i>Enviar Solicitud</span>
+                            </button>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
@@ -497,6 +498,8 @@
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
+    <!-- Pageclip SDK -->
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>

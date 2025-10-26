@@ -24,9 +24,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form handling and validation
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+// Form handling and validation (skip if Pageclip is managing the form)
+const contactFormEl = document.getElementById('contactForm');
+if (contactFormEl && !contactFormEl.classList.contains('pageclip-form')) {
+    contactFormEl.addEventListener('submit', function(e) {
+        e.preventDefault();
     
     // Get form data
     const formData = new FormData(this);
@@ -93,7 +95,8 @@ Espero tu respuesta. ¡Gracias!`;
         }, 2000);
         
     }, 1500);
-});
+    });
+}
 
 // Notification system
 function showNotification(message, type = 'info') {
