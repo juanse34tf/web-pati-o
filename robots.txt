@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://juanse34tf.github.io/web-pati-o/sitemap.xml
+Sitemap: https://profecarpa.works/sitemap.xml
