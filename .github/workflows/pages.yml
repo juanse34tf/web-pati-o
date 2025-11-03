@@ -32,7 +32,7 @@ jobs:
       - name: Build Tailwind CSS
         run: |
           mkdir -p assets
-          npx tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify
+          npx --yes tailwindcss@latest -i ./src/input.css -o ./assets/tailwind.css --minify
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
