@@ -28,10 +28,27 @@
     <!-- Favicon & Manifest -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="manifest" href="site.webmanifest">
-    <!-- Performance hints -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <!-- Compiled Tailwind CSS (built via GitHub Actions) -->
-    <link href="assets/tailwind.css" rel="stylesheet">
+        <!-- Performance hints -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+        <!-- Compiled Tailwind CSS (built via GitHub Actions) -->
+        <link href="assets/tailwind.css" rel="stylesheet">
+        <!-- Fallback: Tailwind CDN (solo como respaldo si el CSS no carga aún) -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            // Config solo para el fallback CDN (los colores ya están en tailwind.config.js para el build)
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#1e40af',
+                            secondary: '#3b82f6',
+                            accent: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
